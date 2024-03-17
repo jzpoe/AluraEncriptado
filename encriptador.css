@@ -1,0 +1,153 @@
+
+body {
+    display: flex;
+    justify-content: center;
+
+background-color: #0056b3;    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+}
+
+.logo {
+            display: flex;
+            justify-content: flex-start; /* Alinea el contenido al inicio del contenedor (izquierda) */
+            align-items: center; /* Centra verticalmente el contenido */
+            width: 100px;
+            height: 50px;
+        }
+
+        .logo p {
+            margin: 0; /* Elimina el margen interno del párrafo para evitar espacios innecesarios */
+            font-size: 24px; /* Tamaño de fuente ajustable según tus preferencias */
+            color: #fff; /* Color de texto blanco */
+        }
+
+.input-text{
+    display: flex;
+    justify-content: space-between; /* Centra el contenedor en la pantalla */
+    padding: 40px;
+    width: 100%;
+    
+}
+
+
+
+.container-encriptar{
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    background-color: #092441;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+
+}
+
+.container-desencriptar{
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    background-color: #092441;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+   
+
+}
+
+.container-encriptar,
+.container-encriptar, label
+{
+    color: #fff;
+    font-size: 20px;
+    
+}
+
+.input-text button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 40px;
+    border-radius: 20px;
+    width: 200px;
+}
+
+ 
+#texto-encriptar{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 200px;
+    border-radius: 30px;
+
+}
+
+#encriptado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 200px;
+    border-radius: 30px;
+}
+
+#texto-encriptar,
+#encriptado{
+    text-align: center; /* Centrar el texto dentro del input y textarea */
+    
+}
+
+
+
+.input-text button:hover {
+    background-color: #0056b3;
+    
+}
+
+@media (max-width: 768px) {
+    .input-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column; /* Cambia a una sola columna en dispositivos móviles */
+    }
+
+    #encriptado,
+    #texto-encriptar{
+width: 70%;
+margin: 30px;
+    }
+
+    .container-encriptar,
+    .container-desencriptar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%; /* Utiliza todo el ancho disponible en dispositivos móviles */
+        max-width: none; /* Elimina el máximo establecido para que pueda ocupar todo el ancho */
+        margin: 20px;
+    }
+
+    .logo {
+        flex-direction: column;/* Centra verticalmente el contenido */
+    }
+
+    .container-btn,
+    .containerTextoDesencriptar{
+        display: flex;
+        flex-direction: column;
+    }
+    /* Otros ajustes necesarios para dispositivos móviles */
+}
+
+  

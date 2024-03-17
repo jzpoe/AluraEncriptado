@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="encriptador.js"></script>
+    <link rel="stylesheet" href="./encriptador.css">
+</head>
+
+<body>
+    
+    <div class="input-text">
+        <div class="logo">
+            <p>
+                Alura Latam
+            </p>
+        </div>
+ 
+        <div class="container-encriptar">
+            <label for="">INGRESA TEXTO</label>
+            <input type="text" id="texto-encriptar" placeholder="excrite el texto" >
+            <div class="container-btn">
+                <button id="btn-encriptar">ENCRIPTAR</button>
+                <button id="btn-desencriptar">DESENCRIPTAR</button>
+            </div>
+            
+        </div>
+        
+
+
+        <div class="container-desencriptar">
+            <label for="">TEXTO ENCRIPTADO</label>
+            <textarea name="" id="encriptado"></textarea>
+            <div class="containerTextoDesencriptar">
+                <button id="btn-copiar">copiar</button>
+                <button id="btn-limpiar">Limpiar</button>
+            </div>
+            
+
+        </div>
+        
+    </div>
+</body>
+<script>
+    let btn = document.querySelector('#btn-encriptar')
+btn.onclick = encriptar
+
+let btn1 = document.querySelector('#btn-desencriptar')
+btn1.onclick = desencriptar
+
+let btn2 = document.querySelector('#btn-limpiar')
+btn2.onclick = limpiar;
+
+let copy = document.querySelector('#btn-copiar')
+copy.onclick = copiar;
+</script>
+
+</html>
